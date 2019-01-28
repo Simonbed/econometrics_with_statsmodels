@@ -3,6 +3,9 @@ This is just to show how to proceed with doing some statistic tests on regressio
 The results of these regressions have not been analysed. I could take the time to interpret the results but it would 
 take more time and I don't want to give wrong interpretations of the results. 
 
-The 3 csv files come from the us federal reserve website. 
+The 3 csv files come from the us federal reserve website.
+
+The econometrics_basics.py puts the data from the 3 csv files into SQL DB. 
+The econometrics_trial2.py does some statistical tests on the SQL DB information.
 
 Have fun looking at how to do the tests. 
