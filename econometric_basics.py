@@ -91,10 +91,3 @@ for row in gnplist :
 
 conn.commit()
 cur.close()
-
-#This is just a small code to get which directory we have set up (sometimes i forget)
-# import os
-# direct = os.getcwd()
-# print(direct)
-##WIth this we have created a database with which we can do some econometric regressions and tests
-##to practice the different packages avaliable for datascience.
