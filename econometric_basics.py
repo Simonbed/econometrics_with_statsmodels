@@ -1,7 +1,5 @@
 #Importing things to make us a database
 import sqlite3
-import json # Our Data comes out in JSON format from the API
-import re #We might use it this time
 import io
 import csv#We download a csv from fred st louis or other for inflation
 
