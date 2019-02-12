@@ -6,6 +6,5 @@ take more time and I don't want to give wrong interpretations of the results.
 The 3 csv files come from the us federal reserve website.
 
 The econometrics_basics.py puts the data from the 3 csv files into SQL DB. 
-The econometrics_trial2.py does some statistical tests on the SQL DB information.
-
+The econometrics_trial2.py does some statistical tests on the data and gives a few graphs
 Have fun looking at how to do the tests. 
