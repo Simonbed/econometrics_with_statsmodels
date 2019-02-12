@@ -1,14 +1,14 @@
-#Importing things to make us a database
+
 import sqlite3
 import io
-import csv#We download a csv from fred st louis or other for inflation
+import csv
 
 #Creating the Database
 conn = sqlite3.connect('econometrics_trial.sqlite')
 cur = conn.cursor()
 cur.execute('''DROP TABLE IF EXISTS Economics''')
 
-#We create tables for our database.
+#create tables for our database
 cur.execute('''CREATE TABLE IF NOT EXISTS Economics
     (id INTEGER PRIMARY KEY,  CPICANADARTE FLOAT, DATE_LIST TEXT, employment_rate FLOAT, CPIUSRTE FLOAT)''')
 
@@ -20,8 +20,8 @@ empllist = list()
 with open('CPICADRTE.csv') as csvfile:
     readCSV = csv.reader(csvfile, delimiter=',')
     for row in readCSV:
-        #print(row[0]) #We used print only to see what we had
-        #print(row) #Same thing, only to see what data we have -- Make sure the data is what we thought
+        #print(row[0]) 
+        #print(row)
         if row[0] == "DATE":
             continue
         else:
@@ -77,7 +77,7 @@ for row in gnplist :
     except:
         gnp = 'null', 'NULL'
     try:
-        # We can create a new variable for The employment rate Change
+
 
         empl = TX_EMPL_INC[count]
     except:
